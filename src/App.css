@@ -4,5 +4,81 @@
   --pinkish:#FCDDC8;
   --font-color1:#e1f370;
   --font-color2: #004534;
-
 }
+body{
+  background-color: var(--bg-colr);
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar {
+  padding: 0px;
+  background-color: #fff;
+  border-bottom: #CB9971 1px solid;
+}
+.navbar .navbar-brand img{
+  height: 80px;
+}
+
+.navbar .nav-item a{
+  color: #004534;
+  font-family: "Calistoga";
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar form .form-control{
+  border-radius: 0px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid;
+  border-color: #004534;
+  /* border-top-left-radius: 15px; */
+  border-bottom-left-radius: 15px;
+  box-shadow: none;
+  background-color: transparent;
+}
+.navbar form .btn-outline-success{
+  border-radius: 0px 15px 0px 0px;
+  border: 2px solid;
+  border-color: #004534;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--font-color2);
+}
+
+.navbar form .btn-outline-success:hover{
+  background-color: var(--font-color2);
+  color: #fff;
+}
+
+
+
+.heading1{
+  color: #E1F271;
+  font-size: 75px;
+  font-family: "Calistoga";
+  line-height: 80px;
+  font-weight: 800;
+}
+
+.heading2{
+  color: #004534;
+  font-family: "Calistoga";
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+}
+
+.heading3{
+  color: #004534;
+  font-family: "Calistoga";
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.subheading1{}

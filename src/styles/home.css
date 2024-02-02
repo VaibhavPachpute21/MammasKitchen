@@ -1,0 +1,40 @@
+.header-section .static .box {
+    position: relative;
+    min-height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.header-section .static .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://images.unsplash.com/photo-1609759843758-bf8cc831c13a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center top;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.static {
+    padding: 50px;
+    top: 0;
+    position: sticky;
+    border-right: 1px solid;
+}
+
+.header-section .static .box .content h3{
+    color: #fff;
+    font-family: "Calistoga";
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 900;
+}
