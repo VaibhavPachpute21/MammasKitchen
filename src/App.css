@@ -82,10 +82,22 @@ body {
 }
 
 .heading3 {
-  color: #004534;
-  font-family: "Calistoga";
   font-size: 25px;
-  font-weight: 400;
+  color: var(--font-color2);
+  font-family: "Calistoga";
+  line-height: 30px;
+  font-weight: 500;
+  transition: 1s;
+  background-image: linear-gradient(transparent calc(95% - 1px), #004534 2px);
+  background-size: 0;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+
+.heading3:hover {
+  background-size: 100%;
+  cursor: pointer;
 }
 
 .subheading1 {
@@ -93,8 +105,18 @@ body {
   font-size: 20px;
   font-weight: 400;
   font-family: "DM Sans", Sans-serif;
+  line-height: 22px;
 }
 
+.subheading2 {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--font-color2);
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
 
 /* Button Styles */
 .btn-info {
@@ -117,7 +139,7 @@ body {
   transition: .5s;
 }
 
-.btn-success{
+.btn-success {
   border-radius: 0px 15px 0px 15px;
   border: 2px solid;
   border-color: #004534;
@@ -128,7 +150,7 @@ body {
   transition: .5s;
 }
 
-.btn-success:hover{
+.btn-success:hover {
   border-radius: 15px 0px 15px 0px;
   border: 2px solid;
   border-color: #004534;
@@ -139,10 +161,34 @@ body {
   transition: .5s;
 }
 
+.texual-btn {
+  font-size: 16px;
+  color: var(--font-color2);
+  font-family: "Calistoga";
+  line-height: 20px;
+  font-weight: 300;
+  transition: 1s;
+  background-image: linear-gradient(transparent calc(95% - 1px), #004534 2px);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+  border-radius: 0px;
+  padding: 5px;
+}
+
+.texual-btn:hover {
+  background-size: 0%;
+  cursor: pointer;
+  color: #004534;
+}
+
+
 /* Borders */
-.border-left  {
+.border-left {
   border-left: 2px solid var(--border-color);
 }
+
 .topBorder {
   border-top: 2px solid var(--border-color);
 }

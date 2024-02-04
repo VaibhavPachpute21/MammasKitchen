@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: space-around;
     color: #fff;
+    border: none;
 }
 
 .header-section .static .box::before {
@@ -61,50 +62,23 @@
 
 .header-section .box .recipe-card img {
     border-radius: 15px;
+    transition: .5s;
 }
 
-.header-section .box .recipe-card p {
-    font-family: "DM Sans", Sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--font-color2);
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
 
 figure {
     overflow: hidden;
     border-radius: 15px;
-}
-
-.header-section .box .recipe-card h3 {
-    font-size: 34px;
-    color: var(--font-color2);
-    font-family: "Calistoga";
-    line-height: 36px;
-    font-weight: bold;
-    transition: 1s;
-    background-image: linear-gradient(transparent calc(95% - 1px), #004534 2px);
-    background-size: 0;
-    background-repeat: no-repeat;
-    display: inline;
-    transition: 0.5s ease;
-}
-
-.header-section .box .recipe-card:hover h3 {
-    background-size: 100%;
-    cursor: pointer;
-
+    margin: auto;
 }
 
 .header-section .box .recipe-card:hover img {
     cursor: pointer;
-    scale: 1.08;
+    scale: 1.05;
     transition: .5s;
 }
 
-.section2 .box{
+.section2 .box {
     padding: 30px;
 }
 
@@ -112,10 +86,131 @@ figure {
     padding: 30px;
 }
 
-.section2 .box img{
+.section2 .box img {
     height: 450px;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 
-.section3{}
+.section3 .box {
+    padding: 30px;
+}
+
+.section3 .box img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.section3 .box img:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: .5s;
+}
+
+.section4 .box {
+    padding: 30px;
+}
+
+.section4 .box .content {
+    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-2.jpg');
+    padding: 50px;
+    border-radius: 15px;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.section4 .box .info {
+    padding: 50px;
+    max-width: 90%;
+}
+
+.section4 .input-group {
+    margin-top: 50px;
+}
+
+.section4 .input-group input {
+    background-color: transparent;
+    border: 1px solid #004534;
+    border-radius: 25px 0px 0px 25px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #004534;
+    box-shadow: none;
+    font-family: "DM Sans", Sans-serif;
+}
+
+.section4 .input-group input::placeholder {
+    color: #004534;
+}
+
+.section4 .input-group .btn-outline-secondary {
+    border: 1px solid #004534;
+    border-radius: 0px 25px 25px 0px;
+    font-size: 16px;
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #004534;
+}
+
+marquee {
+    height: 52px;
+}
+
+marquee span {
+    color: #004534;
+    font-size: 24px;
+    font-family: "Calistoga";
+    padding: 5px 10px;
+    font-weight: 700;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+marquee span svg {
+    fill: #FF6E41;
+}
+
+.section5 .box{
+    margin: auto;
+    padding: 30px;
+}
+
+.section5 .box img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.section5 .box img:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.section6 .box{
+    padding: 30px;
+}
+
+.section6 .banner{
+    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-4.jpg');
+    min-height: 650px;
+    border-radius: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.section6 .banner h3{
+    color: #E1F271;
+    font-size:120px;
+    font-family: "Calistoga";
+    font-weight: 800;
+}
