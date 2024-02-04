@@ -1,26 +1,32 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
   --bg-colr: #fffaea;
-  --border-color:#CB9971;
-  --pinkish:#FCDDC8;
-  --font-color1:#e1f370;
+  --border-color: #CB9971;
+  --pinkish: #FCDDC8;
+  --font-color1: #e1f370;
   --font-color2: #004534;
 }
-body{
+
+body {
   background-color: var(--bg-colr);
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+
 .navbar {
   padding: 0px;
   background-color: #fff;
   border-bottom: #CB9971 1px solid;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
   height: 80px;
 }
 
-.navbar .nav-item a{
+.navbar .nav-item a {
   color: #004534;
   font-family: "Calistoga";
   font-size: 18px;
@@ -30,7 +36,7 @@ body{
   text-transform: uppercase;
 }
 
-.navbar form .form-control{
+.navbar form .form-control {
   border-radius: 0px;
   padding: 5px 10px;
   font-size: 18px;
@@ -42,7 +48,8 @@ body{
   box-shadow: none;
   background-color: transparent;
 }
-.navbar form .btn-outline-success{
+
+.navbar form .btn-outline-success {
   border-radius: 0px 15px 0px 0px;
   border: 2px solid;
   border-color: #004534;
@@ -51,14 +58,14 @@ body{
   color: var(--font-color2);
 }
 
-.navbar form .btn-outline-success:hover{
+.navbar form .btn-outline-success:hover {
   background-color: var(--font-color2);
   color: #fff;
 }
 
 
-
-.heading1{
+/* Font Styles */
+.heading1 {
   color: #E1F271;
   font-size: 75px;
   font-family: "Calistoga";
@@ -66,7 +73,7 @@ body{
   font-weight: 800;
 }
 
-.heading2{
+.heading2 {
   color: #004534;
   font-family: "Calistoga";
   font-size: 48px;
@@ -74,11 +81,68 @@ body{
   font-weight: 900;
 }
 
-.heading3{
+.heading3 {
   color: #004534;
   font-family: "Calistoga";
   font-size: 25px;
   font-weight: 400;
 }
 
-.subheading1{}
+.subheading1 {
+  color: #004534;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "DM Sans", Sans-serif;
+}
+
+
+/* Button Styles */
+.btn-info {
+  color: white;
+  border: 2px solid white;
+  border-radius: 0px 15px 0px 15px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.btn-info:hover {
+  color: var(--font-color2);
+  background-color: white;
+  border: 2px solid white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px 0px 15px 0px;
+  transition: .5s;
+}
+
+.btn-success{
+  border-radius: 0px 15px 0px 15px;
+  border: 2px solid;
+  border-color: #004534;
+  background-color: #004534;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  transition: .5s;
+}
+
+.btn-success:hover{
+  border-radius: 15px 0px 15px 0px;
+  border: 2px solid;
+  border-color: #004534;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004534;
+  transition: .5s;
+}
+
+/* Borders */
+.border-left  {
+  border-left: 2px solid var(--border-color);
+}
+.topBorder {
+  border-top: 2px solid var(--border-color);
+}

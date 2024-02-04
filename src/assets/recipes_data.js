@@ -1,4 +1,4 @@
-const chrismas_recipe = [
+export const chrismas_recipe = [
     {
         "Name": "Simmer-&-stir Christmas cake",
         "url": "https://www.bbcgoodfood.com/recipes/1160/simmerandstir-christmas-cake",
@@ -338,7 +338,7 @@ const chrismas_recipe = [
     }
 ];
 
-const random_recipe = [
+export const random_recipe = [
     {
         "Name": "Silky chicken liver parfait tart",
         "url": "https://www.bbcgoodfood.com/recipes/8153/silky-chicken-liver-parfait-tart",
