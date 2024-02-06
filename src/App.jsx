@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Navbar from './components/navbar'
 import About from './components/About'
-import Recipe from './components/Recipies'
+import Recipe from './components/Recipe'
 import Contact from './components/Contact'
 import Recipies from './components/Recipies'
 
