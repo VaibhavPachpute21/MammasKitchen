@@ -15,7 +15,7 @@ const About = () => {
                         <div className="box">
                             <div className="content">
                                 <h3 className='heading2'>Hello, we're Nataly and Jane.</h3>
-                                <p className='subheading2 mt-4'>Eum altera facilisis an, unum novum appellantur vis ut, no suas utroque appellantur his. Vim error legere cu, ut amet antiopam mei. Per te utamur erroribus molestiae. Mei virtute complectitur ut, no autem semper ius, movet adipisci his.</p>
+                                <p className='subheading4 mt-4'>Eum altera facilisis an, unum novum appellantur vis ut, no suas utroque appellantur his. Vim error legere cu, ut amet antiopam mei. Per te utamur erroribus molestiae. Mei virtute complectitur ut, no autem semper ius, movet adipisci his.</p>
                                 <h5 className='heading4 mt-4'>Food lover & photographer. Enjoys nature <br /> and healthy food, and good coffee</h5>
                                 <div className="circle mt-4">
                                     <div><a href="#" className="subheading3">PINTEREST</a> </div>

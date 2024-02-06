@@ -1,0 +1,71 @@
+.recipes figure {
+    border-radius: 0px;
+}
+
+.recipes figure img {
+    width: 100%;
+    transition: .5s;
+
+}
+
+.recipes figure img:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: .5s;
+}
+
+.recipes .recipe_container {
+    padding-bottom: 50px;
+}
+
+.recipes .followme a {
+    font-size: 16px;
+    font-family: "Calistoga";
+    text-decoration: none;
+    display: block;
+    color: #004534;
+    font-weight: 400;
+}
+
+.recipes .subscribe{
+    background-color: #d9e5d6;
+    padding: 30px 30px 50px 30px;
+    margin: 25px 0px 15px 0px;
+}
+
+.recipes .subscribe input{
+    border: #004534 solid 1px ;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "DM Sans", Sans-serif;
+}
+
+/* .recipes .subscribe button{
+    width: max-content;
+    background-color: #004534;
+    color: #fff;
+    font-size: 18px;
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.recipes .subscribe button:hover{
+    width: max-content;
+    background-color: transparent;
+    color: #004534;
+    font-size: 18px;
+    font-family: "DM Sans", Sans-serif;
+    font-weight:600;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: #004534 1px solid;
+} */

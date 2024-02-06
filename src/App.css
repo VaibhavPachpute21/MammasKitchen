@@ -145,6 +145,14 @@ body {
   cursor: pointer;
 }
 
+.subheading4 {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--font-color2);
+  line-height: 22px;
+  margin-bottom: 0px;
+}
 
 /* Button Styles */
 .btn-info {
