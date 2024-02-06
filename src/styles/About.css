@@ -1,0 +1,22 @@
+.about .box{
+    padding: 30px;
+}
+
+.about .box img{
+    border-radius: 15px;
+}
+
+.about .box .content{
+    padding: 50px;
+}
+
+.circle{
+    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/circle.png');
+    height: 250px;
+    background-repeat: no-repeat;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

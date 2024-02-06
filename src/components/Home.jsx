@@ -64,7 +64,7 @@ const Home = () => {
             </div>
 
             <div className="container-fluid section2" style={{ backgroundColor: '#FCDDC8', }}>
-                <di className="row">
+                <div className="row">
                     <div className="col-md-6">
                         <div className="box">
                             <div className="content">
@@ -80,7 +80,7 @@ const Home = () => {
                                 <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-1.jpg" alt="IMG" /></div>
                         </div>
                     </div>
-                </di>
+                </div>
             </div>
 
             <div className="container-fluid section3">
