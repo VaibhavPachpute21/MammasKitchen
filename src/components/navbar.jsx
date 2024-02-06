@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -16,16 +17,16 @@ const Navbar = () => {
           <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                <Link class="nav-link mx-2" aria-current="page" to={'/'}>Home</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#">About</a>
+                <Link class="nav-link mx-2" to={'/about'}>About</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Recipe</a>
+                <Link class="nav-link mx-2" to={'/recipies'}>Recipe</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Contact</a>
+                <Link class="nav-link mx-2" to={'/contact'}>Contact</Link>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
