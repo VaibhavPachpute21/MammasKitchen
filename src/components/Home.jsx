@@ -270,6 +270,21 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="container-fluid topBorder section7">
+                <div className="row">
+                    {["https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-1.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-2.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-3.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-4.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-5.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-6.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-7.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-8.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-9.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-10.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-11.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-12.jpg"].map((img,index)=>{
+                        return (<>
+                            <div className="col-md-2 p-0">
+                        <div className="box">
+                            <img src={img} alt={index} width={"100%"} /></div>
+                    </div>
+                        </>)
+                    })}
+                    
+                </div>
+            </div>
+
         </>
 
     )

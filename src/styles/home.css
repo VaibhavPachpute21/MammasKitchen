@@ -214,3 +214,15 @@ marquee span svg {
     font-family: "Calistoga";
     font-weight: 800;
 }
+
+.section7{
+    padding: 80px;
+}
+
+.section7 .box{
+    padding: 10px;
+}
+
+.section7 .box img{
+    border-radius: 15px;
+}
