@@ -6,6 +6,7 @@ const Recipe = () => {
   const [recipe, setRecipe] = useState(null);
   const { id } = useParams();
   useEffect(() => {
+    window.scrollTo(0, 0);
     console.log(id)
     if (id.startsWith('r')) {
       const r = random_recipe.find(function (recipe) { return recipe.id == id });
@@ -14,7 +15,7 @@ const Recipe = () => {
       const c = random_recipe.find(function (recipe) { return recipe.id == id });
       setRecipe(c);
     }
-  }, []);
+  }, [id]);
 
 
   return (
