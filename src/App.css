@@ -152,6 +152,7 @@ body {
   color: var(--font-color2);
   line-height: 22px;
   margin-bottom: 0px;
+  text-decoration: none;
 }
 
 /* Button Styles */
@@ -271,21 +272,25 @@ footer .input-group input::placeholder{
 
 footer .input-group button {
   border-radius: 30px 30px 30px 30px;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: #004534;
   color: #fff;
   border: 1px solid #004534;
   margin-left: 15px;
-
+  font-family: "DM Sans", Sans-serif; 
+  font-weight: 600;
+  font-size: 18px;
 }
 
 footer .input-group button:hover {
   border-radius: 30px 30px 30px 30px;
-  padding: 10px;
+  padding: 10px 30px;
   color: #004534;
   background-color: transparent;
   border: 1px solid #004534;
-
+  font-family: "DM Sans", Sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 

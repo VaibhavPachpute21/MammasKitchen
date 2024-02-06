@@ -34,7 +34,7 @@ const Footer = () => {
                                 <div className="info">
                                     <h3 className='heading2'>Subscribe to Newsletter</h3>
                                     <p className='subheading1'>Be the first to receive the latest news on upcoming posts & more.</p>
-                                    <div class="input-group mt-5">
+                                    <div class="input-group mt-5 w-75">
                                         <input type="text" class="form-control" placeholder="your email" aria-label="Recipient's username" aria-describedby="button-addon2" />
                                         <button class="btn btn-outline-secondary" type="button" id="button-addon2">SEND</button>
                                     </div>
