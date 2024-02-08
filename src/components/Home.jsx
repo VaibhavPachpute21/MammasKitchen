@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import { random_recipe } from '../assets/recipes_data';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const svgIcon = () => {
@@ -21,7 +22,7 @@ const Home = () => {
                                 <div className="content">
                                     <p>GLUTEN FREE / OCTOBER 6</p>
                                     <h3>10 easy recipes that you can try!</h3>
-                                    <button className="btn btn-info">READ MORE</button>
+                                    <Link className="btn btn-info" to={'/chrismas-recipies'}>READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -36,7 +37,7 @@ const Home = () => {
                                                 <img src={recipe.image_url} alt={recipe.Name} height={index == 1 || index == 3 ? '350px' : '250px'} width={'100%'} />
                                             </figure>
                                             <p className='subheading2'>{recipe.Author}</p>
-                                            <h3 className='heading3'>{recipe.Name}</h3>
+                                            <Link to={`/recipe/${recipe.id}`} style={{textDecoration:'none'}} className='heading3 '>{recipe.Name}</Link>
                                         </div>
                                     </div>
                                 </>
@@ -53,7 +54,7 @@ const Home = () => {
                                                 <img src={recipe.image_url} alt={recipe.Name} height={index == 0 || index == 2 ? '350px' : '250px'} width={'100%'} />
                                             </figure>
                                             <p className='subheading2'>{recipe.Author}</p>
-                                            <h3 className='heading3'>{recipe.Name}</h3>
+                                            <Link to={`/recipe/${recipe.id}`} style={{textDecoration:'none'}}  className='heading3'>{recipe.Name}</Link>
                                         </div>
                                     </div>
                                 </>
@@ -70,7 +71,7 @@ const Home = () => {
                             <div className="content">
                                 <h3 className='heading2'>Hello, we're Nataly and Jane.</h3>
                                 <p className='subheading1'>Eum altera facilisis an, unum novum appellantur vis ut, no suas utroque appellantur his. Vim error legere cu, ut amet antiopam mei. Per te utamur erroribus molestiae. Mei virtute complectitur ut, no autem semper ius, movet adipisci his.</p>
-                                <button className='btn btn-success'>LEARN MORE</button>
+                                <Link to={'/about'} className='btn btn-success'>LEARN MORE</Link>
                             </div>
                         </div>
                     </div>
@@ -96,7 +97,7 @@ const Home = () => {
                                                 <p className='subheading2 mb-1'>{recipe.Author}</p>
                                                 <h3 className='heading3'>{recipe.Name}</h3>
                                                 <p className='subheading1 mt-1'>{recipe.Description.slice(0, 200)}...</p>
-                                                <button className='btn texual-btn'>READ MORE</button>
+                                                <Link to={`/recipe/${recipe.id}`} style={{textDecoration:'none'}}  className='btn texual-btn'>READ MORE</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -255,7 +256,7 @@ const Home = () => {
                                     <figure><img src={recipe.image_url} alt="" /></figure>
 
                                     <p className='subheading2 mb-1'>{recipe.Author}</p>
-                                    <h3 className='heading3'>{recipe.Name}</h3>
+                                    <Link to={`/recipe/${recipe.id}`} style={{textDecoration:'none'}}  className='heading3'>{recipe.Name}</Link>
                                     <p className='subheading1 mt-1'>{recipe.Description.slice(0, 200)}...</p>
                                 </div>
                             </div>)
@@ -275,7 +276,7 @@ const Home = () => {
                 <div className="row">
                     {["https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-1.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-2.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-3.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-4.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-5.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-6.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-7.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-8.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-9.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-10.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-11.jpg","https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/gallery-12.jpg"].map((img,index)=>{
                         return (<>
-                            <div className="col-md-2 p-0">
+                            <div className="col-md-2 col-6 p-0">
                         <div className="box">
                             <img src={img} alt={index} width={"100%"} /></div>
                     </div>

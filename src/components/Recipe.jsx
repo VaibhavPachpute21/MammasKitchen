@@ -1,21 +1,37 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { chrismas_recipe, random_recipe } from '../assets/recipes_data'
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState(null);
   const { id } = useParams();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    console.log(id)
-    if (id.startsWith('r')) {
-      const r = random_recipe.find(function (recipe) { return recipe.id == id });
+  const navigate=useNavigate()
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+  console.log(id);
+  if (id.startsWith('r')) {
+    const r = random_recipe.find(recipe => recipe.id === id);
+    if (r) {
       setRecipe(r);
-    } else if (id.startsWith('c')) {
-      const c = random_recipe.find(function (recipe) { return recipe.id == id });
-      setRecipe(c);
+    } else {
+      console.error(`Recipe with ID ${id} not found`);
+      navigate('/recipe-not-found');
     }
-  }, [id]);
+  } else if (id.startsWith('c')) {
+    const c = chrismas_recipe.find(recipe => recipe.id === id);
+    if (c) {
+      setRecipe(c);
+    } else {
+      console.error(`Christmas Recipe with ID ${id} not found`);
+      navigate('/recipe-not-found');
+
+    }
+  }else{
+    navigate('/recipe-not-found');
+  }
+}, [id]);
+
 
 
   return (

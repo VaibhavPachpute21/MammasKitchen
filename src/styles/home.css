@@ -226,3 +226,20 @@ marquee span svg {
 .section7 .box img{
     border-radius: 15px;
 }
+
+@media only screen and (max-width: 480px) {
+    .box {
+        padding: 15px;
+
+    }
+    .static {
+        padding: 10px;
+    }
+
+    .border-left{
+        border-left: none;
+    }
+    .section6 .banner h3 {
+        font-size: 75px;
+    }
+  }
