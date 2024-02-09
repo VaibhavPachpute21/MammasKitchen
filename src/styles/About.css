@@ -11,7 +11,7 @@
 }
 
 .circle{
-    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/11/circle.png');
+    background-image: url('/assets/circle.png');
     height: 250px;
     background-repeat: no-repeat;
     width: 250px;
@@ -19,4 +19,20 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .about .box{
+        padding: 15px;
+    }
+    .about .box .content {
+        padding: 15px;
+    }
+
+    .about .border-left{
+        border: none;
+    }
+
+
+    
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '/assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -18,10 +19,10 @@ const Footer = () => {
                                         <a href="#">PINTEREST</a>
                                     </div>
                                     <div className="col-md-3">
-                                        <a href="#">HOME</a>
-                                        <a href="#">RECEPIES</a>
-                                        <a href="#">ABOUT</a>
-                                        <a href="#">CONTACT</a>
+                                        <Link to={'/'}>HOME</Link>
+                                        <Link to={'/recipies'}>RECEPIES</Link>
+                                        <Link to={'/about'}>ABOUT</Link>
+                                        <Link to={'/contact'}>CONTACT</Link>
                                     </div>
                                     <div className="col-md-3">
                                         <a href="#">PODCAST</a>
@@ -34,9 +35,9 @@ const Footer = () => {
                                 <div className="info">
                                     <h3 className='heading2'>Subscribe to Newsletter</h3>
                                     <p className='subheading1'>Be the first to receive the latest news on upcoming posts & more.</p>
-                                    <div class="input-group mt-5 w-75">
-                                        <input type="text" class="form-control" placeholder="your email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">SEND</button>
+                                    <div  className="input-group mt-5 w-75">
+                                        <input type="text"  className="form-control" placeholder="your email" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                        <button  className="btn btn-outline-secondary" type="button" id="button-addon2">SEND</button>
                                     </div>
                                     <p className='copyright-text'>© 2024 Qode Interactive, All Rights Reserved</p>
                                 </div>

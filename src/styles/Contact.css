@@ -31,4 +31,16 @@
 }
 
 
+@media only screen and (max-width: 480px) {
+    .contact .box{
+        padding: 15px;
+    }
 
+    .contact .box .content{
+        padding: 15px;
+    }
+
+    .contact .border-left{
+        border: none;
+    }
+}

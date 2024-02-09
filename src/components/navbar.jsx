@@ -1,38 +1,50 @@
-import React from 'react'
-import logo from '../assets/logo.png'
-import {Link} from 'react-router-dom'
+import React,{useState} from 'react'
+import logo from '/assets/logo.png'
+import { Link} from 'react-router-dom'
+
 
 const Navbar = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const handleLinkClick = () => {
+    if (isNavOpen) {
+      setIsNavOpen(false);
+    }
+  };
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light p-1 bg-transparent px-md-3" >
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             <img src={logo} alt="Mama's Kitchen" />
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          </a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavToggle}>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <Link class="nav-link mx-2" aria-current="page" to={'/'}>Home</Link>
+          <div className={`collapse navbar-collapse ${isNavOpen ? 'show collapsing' : ''}`} id="navbarNavDropdown">
+            <ul className="navbar-nav ms-auto ">
+              <li className="nav-item">
+                <Link className="nav-link mx-2" aria-current="page" to={'/'} onClick={handleLinkClick}>Home</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link mx-2" to={'/about'}>About</Link>
+              <li className="nav-item">
+                <Link className="nav-link mx-2" to={'/about'} onClick={handleLinkClick}>About</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link mx-2" to={'/recipies'}>Recipe</Link>
+              <li className="nav-item">
+                <Link className="nav-link mx-2" to={'/recipies'} onClick={handleLinkClick}>Recipe</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link mx-2" to={'/contact'}>Contact</Link>
+              <li className="nav-item">
+                <Link className="nav-link mx-2" to={'/contact'} onClick={handleLinkClick}>Contact</Link>
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-              <form class="d-flex" role="search">
-                <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <ul className="navbar-nav ms-auto d-none d-lg-inline-flex">
+              <form className="d-flex" role="search">
+                <input className="form-control me-0" type="search" placeholder="Search" aria-label="Search" />
+                <button className="btn btn-outline-success" type="submit">Search</button>
               </form>
             </ul>
           </div>

@@ -20,7 +20,26 @@ body {
   padding: 0px;
   background-color: #fff;
   border-bottom: #CB9971 1px solid;
+  transition: all 1s ease;
 }
+
+.navbar-toggler {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-collapse {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 400px;
+  opacity: 1;
+}
+
+.navbar-collapse.collapsing {
+  max-height: 0;
+  opacity: 0;
+}
+
 
 .navbar .navbar-brand img {
   height: 80px;
@@ -100,7 +119,7 @@ body {
   cursor: pointer;
 }
 
-.heading4{
+.heading4 {
   color: #004534;
   font-size: 25px;
   font-weight: 400;
@@ -126,13 +145,13 @@ body {
   margin-bottom: 0px;
 }
 
-.subheading3{
+.subheading3 {
   font-size: 18px;
   text-decoration: none;
   color: var(--font-color1);
   font-family: "Calistoga";
   line-height: 25px;
-  font-weight:300;
+  font-weight: 300;
   transition: 1s;
   background-image: linear-gradient(transparent calc(95% - 1px), #e1f370 2px);
   background-size: 0;
@@ -140,7 +159,8 @@ body {
   display: inline;
   transition: 0.5s ease;
 }
-.subheading3:hover{
+
+.subheading3:hover {
   background-size: 100%;
   cursor: pointer;
 }
@@ -245,14 +265,14 @@ footer .col-md-3 a {
   padding: 5px 0px;
 }
 
-footer .input-group{
+footer .input-group {
   background-color: transparent;
   border: 1px solid #004534;
   border-radius: 30px;
   padding: 0px;
 }
 
-footer .input-group input{
+footer .input-group input {
   background-color: transparent !important;
   border: 1px solid #004534;
   border-radius: 25px 0px 0px 25px;
@@ -265,7 +285,7 @@ footer .input-group input{
   border-right: none;
 }
 
-footer .input-group input::placeholder{
+footer .input-group input::placeholder {
   color: #004534;
 }
 
@@ -277,7 +297,7 @@ footer .input-group button {
   color: #fff;
   border: 1px solid #004534;
   margin-left: 15px;
-  font-family: "DM Sans", Sans-serif; 
+  font-family: "DM Sans", Sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
@@ -299,4 +319,28 @@ footer .copyright-text {
   margin-top: 30px;
   font-size: 15px;
   line-height: 26px;
+}
+
+@media only screen and (max-width:480px) {
+  footer .col-md-6 {
+    padding: 15px;
+  }
+
+  footer .col-md-6 .col-md-3 {
+    padding-bottom: 2rem;
+  }
+
+  footer .border-left {
+    border: none;
+    border-top: 2px solid var(--border-color);
+  }
+
+  footer .col-md-6 .info {
+    padding-top: 2rem;
+  }
+
+  footer .col-md-6 .w-75 {
+    width: 100% !important;
+  }
+
 }

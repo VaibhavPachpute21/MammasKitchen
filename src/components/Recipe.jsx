@@ -1,44 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { chrismas_recipe, random_recipe } from '../assets/recipes_data'
+import { chrismas_recipe, random_recipe } from '../data/recipes_data.js'
+import Sidebar from './Sidebar.jsx';
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState(null);
   const { id } = useParams();
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-  console.log(id);
-  if (id.startsWith('r')) {
-    const r = random_recipe.find(recipe => recipe.id === id);
-    if (r) {
-      setRecipe(r);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    console.log(id);
+    if (id.startsWith('r')) {
+      const r = random_recipe.find(recipe => recipe.id === id);
+      if (r) {
+        setRecipe(r);
+      } else {
+        console.error(`Recipe with ID ${id} not found`);
+        navigate('/recipe-not-found');
+      }
+    } else if (id.startsWith('c')) {
+      const c = chrismas_recipe.find(recipe => recipe.id === id);
+      if (c) {
+        setRecipe(c);
+      } else {
+        console.error(`Christmas Recipe with ID ${id} not found`);
+        navigate('/recipe-not-found');
+
+      }
     } else {
-      console.error(`Recipe with ID ${id} not found`);
       navigate('/recipe-not-found');
     }
-  } else if (id.startsWith('c')) {
-    const c = chrismas_recipe.find(recipe => recipe.id === id);
-    if (c) {
-      setRecipe(c);
-    } else {
-      console.error(`Christmas Recipe with ID ${id} not found`);
-      navigate('/recipe-not-found');
-
-    }
-  }else{
-    navigate('/recipe-not-found');
-  }
-}, [id]);
-
-
+  }, [id]);
 
   return (
     <div>
       <div>
-        <div className="container pt-md-5 mt-md-5 pb-md-5 mb-md-5 recipes">
-          <div className="row gap-5 pb-md-5">
+        <div className="container pt-md-5 mt-md-5 pt-5 pb-md-5 mb-md-5 pb-5 recipes">
+          <div className="row gap-5 pb-md-5 pb-5">
             <div className="col-md-8">
               <div className="container p-0">
                 {recipe && <div className="recipe_container">
@@ -61,28 +60,7 @@ useEffect(() => {
 
             </div>
             <div className="col-md-3">
-              <div className="box">
-                <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/autor-sidebar.jpg" width={'100%'} alt="img" />
-                <h5 className='heading4 mt-4'>Hi I’m Lesli</h5>
-                <p className="subheading4 mb-5">I create simple, delicious recipes that require 10 ingredients or less, one bowl, or 30 minutes or less to prepare.</p>
-                <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/widget-img.jpg" width={'100%'} alt="img" />
-                <h5 className="heading4 mt-5">Follow me</h5>
-                <div className='followme'>
-                  <a href="#">INSTAGRAM</a>
-                  <a href="#">FACEBOOK</a>
-                  <a href="#">YOUTUBE</a>
-                  <a href="#">PINTEREST</a>
-                </div>
-                <div className="subscribe mt-5">
-                  <h5 className="heading4">Subscribe to Newsletter</h5>
-                  <input type="email" placeholder='your email' className='form-control' />
-                  <button className='btn btn-success mt-3'>SEND</button>
-                </div>
-                <h5 className="heading4 mt-5">Free Recipe Book</h5>
-                <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/sidebar-img.png" alt="img" />
-
-                <button className='btn btn-success mt-3'>GET MY E BOOK</button>
-              </div>
+              <Sidebar />
             </div>
           </div>
           <div className="row">

@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Recipies from './components/Recipies'
 import ChrismasRecipes from './components/ChrismasRecipes'
 import ErrorPage from './components/ErrorPage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
+        <ScrollToTop/>
       </div>
     </>
   )

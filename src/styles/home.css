@@ -115,7 +115,7 @@ figure {
 }
 
 .section4 .box .content {
-    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-2.jpg');
+    background-image: url('/assets/home-img-2.jpg');
     padding: 50px;
     border-radius: 15px;
     min-height: 600px;
@@ -199,7 +199,7 @@ marquee span svg {
 }
 
 .section6 .banner{
-    background-image: url('https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-4.jpg');
+    background-image: url('/assets/home-img-4.jpg');
     min-height: 650px;
     border-radius: 15px;
     background-position: center center;
@@ -228,18 +228,104 @@ marquee span svg {
 }
 
 @media only screen and (max-width: 480px) {
-    .box {
+    .header-section .static .box {
         padding: 15px;
-
+        min-height: 800px;
     }
     .static {
-        padding: 10px;
+        padding: 15px;
+    }
+    .header-section .box {
+        padding: 15px;
     }
 
-    .border-left{
-        border-left: none;
+    .header-section .border-left{
+        border-left: 2px solid var(--border-color);
+        border-right: 2px solid var(--border-color);
+    }
+
+    .section2 .box {
+        padding: 15px;
+    }
+    
+    .section2 .box .content {
+        padding: 15px;
+    }
+
+    /* .section2{
+        border-left: 2px solid var(--border-color);
+        border-right: 2px solid var(--border-color);
+    } */
+
+    .section2 .border-left{
+        border: none;
+        border-top: 2px solid var(--border-color);
+    }
+
+    .section3 .border-left{
+        border-left: 2px solid var(--border-color);
+        border-right: 2px solid var(--border-color);
+    }
+
+    .section3 .box{
+        padding:15px;
+    }
+
+    .section4 .box{
+        padding: 15px;
+    }
+
+    .section4 .box .content{
+        padding: 15px;
+        min-height: 700px;
+        display: grid;
+        align-content: center;
+        background-position: left top;
+    }
+
+    .section4 .border-left{
+        border: none;
+        border-top: 2px solid var(--border-color);
+    }
+
+    .section4 .box .info {
+        padding: 15px;
+        max-width:100%;
+    }
+
+    .section5 .box{
+        padding: 15px;
+    }
+
+    .section5 .border-left{
+        border-top: 2px solid var(--border-color);
+        border-right: 2px solid var(--border-color);
+    }
+    .section5 .border-left:first-child{
+        border-top: none !important;
+    }
+
+    .section6{
+        padding: 0px;
+    }
+    .section6 .box{
+        padding: 15px;
     }
     .section6 .banner h3 {
         font-size: 75px;
     }
+
+    .section6 .banner {
+        display: grid;
+        align-items: center;
+    }
+
+    .section7{
+        padding: 15px;
+    }
+
+
+
+
+
   }

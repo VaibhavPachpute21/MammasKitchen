@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-6 p-0">
             <div className="box">
-              <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/home-img-1.jpg" width={'100%'} alt="img" />
+              <img src="/assets/home-img-1.jpg" width={'100%'} alt="img" />
             </div>
           </div>
           <div className="col-md-6 p-0 border-left" style={{ backgroundColor: '#D9E5D6', }}>
@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
 
         <div className="row topBorder">
-          <div className="col-md-6 p-0">
+          <div className="col-md-6 p-0 order-last order-md-0">
             <div className="box">
               <div className="content">
                 <h3 className="heading2">What are you interested in asking?</h3>
@@ -40,9 +40,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 border-left p-0">
+          <div className="col-md-6 border-left p-0 order-1">
             <div className="box">
-              <img src="https://qi142.qodeinteractive.com/wp-content/uploads/2021/10/inner-pages-img.jpg" width={'100%'} height={'100%'} alt="img" />
+              <img src="/assets/inner-pages-img.jpg" width={'100%'} height={'100%'} alt="img" />
             </div>
           </div>
         </div>

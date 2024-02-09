@@ -14,9 +14,9 @@
     transition: .5s;
 }
 
-.recipes .recipe_container {
+/* .recipes .recipe_container {
     padding-bottom: 50px;
-}
+} */
 
 .recipes .followme a {
     font-size: 16px;
